@@ -23,9 +23,11 @@ h3{
 font-size: 18px;
 font-weight: 900;
 }
+/*
 h4{
 	text-transform: uppercase;
 }
+*/
 h5{
 	text-transform: uppercase;
 	font-weight: 700;
@@ -622,7 +624,7 @@ nav#footer p{
 	color: #8c8c8c;
 	transition: all 0.5s;
 }
-<<<<<<< HEAD
+
 #footer i.fa:hover {
 	background: #FCAC45;
 	border-color: #FCAC45;
@@ -637,9 +639,36 @@ nav#footer p{
 .table td {
 	text-align: center;
 }
-=======
-#footer i.fa:hover{
+
+#footer i.fa:hover {
 	background: #035e34;
 	border-color: #035e34;
 	color: #ffffff;
->>>>>>> b7c093ac7330166eb86c56b87a2205ab1e41239d
+}
+
+
+
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: block;
+}
+
+
+
+
+
