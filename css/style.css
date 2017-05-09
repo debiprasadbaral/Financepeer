@@ -622,7 +622,17 @@ nav#footer p{
 	color: #8c8c8c;
 	transition: all 0.5s;
 }
-#footer i.fa:hover{
+#footer i.fa:hover {
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
+}
+
+/*table*/
+.table th {
+	text-align: center;
+}
+
+.table td {
+	text-align: center;
+}
