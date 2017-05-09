@@ -40,15 +40,15 @@ p.intro{
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
 }
-a{ color: #FCAC45;}
+a{ color: #035e34;}
 a:hover,
 a:focus{
 	text-decoration: none;
-	color: #FCAC45;
+	color: #035e34;
 }
 
 .section-title hr{
-	border-color: #fcac45;
+	border-color: #035e34;
 	border-width: 4px;
 	width: 60px;
 	float: left;
@@ -82,7 +82,7 @@ ul, ol{
 	transition: all 0.8s;
 }
 #tf-menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
+	background-color: rgba(21,99,150,0.2);
 	border-color: rgba(231, 231, 231, 0);
 }
 #tf-menu a.navbar-brand {
@@ -105,7 +105,7 @@ font-weight: 900;
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-	color: #FCAC45 !important;
+	color: #035e34 !important;
 	background-color: transparent;
 	font-weight: 700;
 }
@@ -115,16 +115,16 @@ font-weight: 900;
 	}
 .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:focus {
-	background-color: #FCAC45;
-	border-color: #FCAC45;
+	background-color: #035e34;
+	border-color: #035e34;
 	}
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/01.jpg);
-	background-size: cover;
+	background: url(../img/Optimized-Home_x.jpg);
+	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -152,7 +152,7 @@ font-weight: 900;
 }
 
 .color{
-	color: #fcac45;
+	color: #035e34;
 }
 
 a.fa.fa-angle-down {
@@ -165,9 +165,9 @@ a.fa.fa-angle-down {
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
-	background: #fcac45;
+	background: #035e34;
 	color: #ffffff;
-	border: 2px solid #fcac45;
+	border: 2px solid #035e34;
 }
 /* About Section */
 #tf-about{
@@ -213,7 +213,7 @@ ul.about-list li span{
 	font-weight: 300;
 }
 .section-title.center .line{
-	border-top: 4px solid #fcac45;
+	border-top: 4px solid #035e34;
 	height: 10px;
 	width: 60px;
 	text-align: center;
@@ -244,7 +244,7 @@ img.img-circle.team-img {
 	transition: all 0.5s;
 }
 #tf-team .item .thumbnail:hover>img.img-circle.team-img{
-	border: 4px solid #FCAC45;
+	border: 4px solid #035e34;
 }
 #tf-team .thumbnail {
 	background: transparent;
@@ -274,10 +274,10 @@ img.img-circle.team-img {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
 	filter: Alpha(Opacity=100);
 	opacity: 1;
-	background: #FCAC45;
+	background: #035e34;
 }
 .owl-theme .owl-controls .owl-page.active span{
-	background: #FCAC45;
+	background: #035e34;
 }
 
 /* Services Section */
@@ -295,7 +295,7 @@ img.img-circle.team-img {
 
 #tf-borrow-services i.fa {
 	font-size: 40px;
-	border: 4px solid #FCAC45;
+	border: 4px solid #156396;
 	width: 100px;
 	height: 100px;
 	padding: 27px 25px;
@@ -306,7 +306,7 @@ img.img-circle.team-img {
 
 #tf-lend-services i.fa {
 	font-size: 40px;
-	border: 4px solid #FCAC45;
+	border: 4px solid #035e34;
 	width: 100px;
 	height: 100px;
 	padding: 27px 25px;
@@ -326,12 +326,12 @@ img.img-circle.team-img {
 }
 
 #tf-borrow-services .service:hover>i.fa{
-	background: #FCAC45;
+	background: #325B38;
 	color: #ffffff;
 }
 
 #tf-lend-services .service:hover>i.fa{
-	background: #FCAC45;
+	background: #156396;
 	color: #ffffff;
 }
 
@@ -467,15 +467,15 @@ ol.type li a.active { font-weight: 700; }
 #tf-works i.fa {
 	height: 30px;
 	width: 30px;
-	border: 1px solid #FCAC45;
+	border: 1px solid #035e34;
 	font-size: 20px;
 	padding: 5px;
 	border-radius: 50%;
-	color: #FCAC45;
+	color: #035e34;
 }
 /* Testimonials Section */
 #tf-testimonials-lend{
-	background: url(../img/05.jpg);
+	background: url(../img/shutterstock_567614431.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -568,7 +568,7 @@ label {
 
 button.btn.tf-btn.btn-default {
 	float: center;
-	background: #FCAC45;
+	background: #035e34;
 	border: 0;
 	border-radius: 0;
 	padding: 10px 40px;
@@ -622,6 +622,7 @@ nav#footer p{
 	color: #8c8c8c;
 	transition: all 0.5s;
 }
+<<<<<<< HEAD
 #footer i.fa:hover {
 	background: #FCAC45;
 	border-color: #FCAC45;
@@ -636,3 +637,9 @@ nav#footer p{
 .table td {
 	text-align: center;
 }
+=======
+#footer i.fa:hover{
+	background: #035e34;
+	border-color: #035e34;
+	color: #ffffff;
+>>>>>>> b7c093ac7330166eb86c56b87a2205ab1e41239d
