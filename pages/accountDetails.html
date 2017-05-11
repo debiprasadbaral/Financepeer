@@ -13,36 +13,29 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
 
     <!-- Slider
     ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.theme.css" rel="stylesheet" media="screen">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-
-    <style>
-        .btnPadding{
-            padding: 22px;
-        }
-    </style>
+    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -64,7 +57,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img class="navbar-brand" src="img/FP-Logo1.png" alt="...">
+            <img class="navbar-brand" src="../img/FP-Logo1.png" alt="...">
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,31 +77,65 @@
     </div><!-- /.container-fluid -->
 </nav>
 
+<!-- Borrow Form Section
+    ==========================================-->
 
-<div class="container" style="padding-top: 7%">
+<div class="container" style="padding-top:5%">
 
-    <div>
-        <h2 class="text-center">Lender</h2>
-        <br><br>
+    <!--<h3>Tabs</h3>-->
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="borrowDashboard.html">Transactions</a></li>
+        <li><a href="payments.html">Make Payments</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li class="active"><a href="accountDetails.html">Account Details</a></li>
+    </ul>
 
-        <div class="col-xs-offset-5 col-md-offset-4">
+    <br>
 
-                <a href="individualSignIn.html">
-                    <button class="btn btn-lg btn-primary btn-group btnPadding btnCenter">Individual
-                    </button>
-                </a>
-
-                <a href="companySignIn.html">
-                    <button class="btn btn-lg btn-primary btn-group btnCenter ">Entity, Company,<br>Government, Institution
-                    </button>
-                </a>
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <span id="kycDone" style="float: right">e-KYC not done</span>
+            <h3 class="box-title">Account Details</h3>
         </div>
 
+    <form action="">
+        <div class="box-body">
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="firstname">FirstName:</label>
+            <input type="text"  class="form-control" id="firstname" placeholder="Enter FirstName" name="firstname" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="lastname">LastName:</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Enter LastName" name="lastname" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" class="form-control" id="dob" placeholder="Enter Date Of Birth" name="dob" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="contact">Contact Details:</label>
+            <input type="tel" class="form-control" id="contact" placeholder="Enter Contact Details" name="contact" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="pan">PAN:</label>
+            <input type="text" class="form-control" id="pan" placeholder="Enter PAN" name="pan" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+            <label for="aadhar">Aadhar:</label>
+            <input type="text" class="form-control" id="aadhar" placeholder="Enter Aadhar" name="aadhar" required>
+        </div>
+        <div class="form-group col-sm-6 col-md-8 col-md-offset-1">
+             <button type="submit" class="btn btn-lg btn-primary">Proceed with e-KYC</button>
+        </div>
+        </div>
+    </form>
+
     </div>
-
 </div>
-
-
 
 
 <nav id="footer">
@@ -132,17 +159,17 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/SmoothScroll.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.js"></script>
 
-<script src="js/owl.carousel.js"></script>
+<script src="../js/owl.carousel.js"></script>
 
 <!-- Javascripts
 ================================================== -->
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 
 

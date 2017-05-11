@@ -12,30 +12,30 @@
     <meta name="author" content="ThemeForces.com">
 
     <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+       ================================================== -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
 
     <!-- Slider
     ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.theme.css" rel="stylesheet" media="screen">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +57,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img class="navbar-brand" src="img/FP-Logo1.png" alt="...">
+            <img class="navbar-brand" src="../img/FP-Logo1.png" alt="...">
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,108 +80,59 @@
 
 <div class="container" style="padding-top: 5%">
 
+    <!--<h3>Tabs</h3>-->
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="borrowDashboard.html">Transactions</a></li>
+        <li><a href="payments.html">Make Payments</a></li>
+        <li class="active"><a href="notifications.html">Notifications</a></li>
+        <li><a href="accountDetails.html">Account Details</a></li>
+    </ul>
+
+    <br>
+
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Borrower Listing Page &nbsp;
-                <a href="#">
-                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
-                </a>
-            </h3>
-
+            <h3 class="box-title">Notifications</h3>
         </div>
         <br>
         <!-- /.box-header -->
         <div class="box-body no-padding table-responsive">
-            <table id="borrowerListingTable" class="table table-hover">
+            <table class="table table-hover">
                 <tr>
-                    <th>Borrower ID</th>
-                    <th>Borrower Ratings</th>
-                    <th>Credit Burau **</th>
-                    <th>Annual Interest rate</th>
-                    <th>Amount Asked</th>
-                    <th>Amount **</th>
-                    <th>Tenure</th>
-                    <th>Loan Type</th>
-                    <th>Security Collateral</th>
-                    <th>Borrower Remarks</th>
-                    <th>Fully Fund</th>
-                    <th>Partial Fund</th>
-                    <th>Lender Request Remarks</th>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>Notification Date</th>
+                    <th>Images/Links</th>
                 </tr>
                 <tr>
-                    <td>1.</td>
-                    <td>9</td>
-                    <td>12000</td>
-                    <td>12%</td>
-                    <td>25000</td>
-                    <td>5000</td>
-                    <td>ABC</td>
-                    <td>Personal</td>
-                    <td>Personal Guarantee</td>
-                    <td>Good</td>
-                    <td><button class="btn-sm btn btn-default"><a href="fullyFund.html">Click</a></button></td>
-                    <td><button class="btn-sm btn btn-default"><a href="partialFund.html">Click</a> </button></td>
-                    <td>Good</td>
+                    <td>B23</td>
+                    <td>Notification1</td>
+                    <td>05/05/2017</td>
+                    <td><a href="#">Notification1</a></td>
                 </tr>
                 <tr>
-                    <td>2.</td>
-                    <td>6</td>
-                    <td>1000</td>
-                    <td>10%</td>
-                    <td>5000</td>
-                    <td>2000</td>
-                    <td>ABC</td>
-                    <td>Car</td>
-                    <td>Personal Guarantee</td>
-                    <td>Good</td>
-                    <td><button class="btn-sm btn btn-default"><a href="fullyFund.html">Click</a></button></td>
-                    <td><button class="btn-sm btn btn-default"><a href="partialFund.html">Click</a> </button></td>
-                    <td>Good</td>
+                    <td>B45</td>
+                    <td>Notification2</td>
+                    <td>03/05/2017</td>
+                    <td><a href="#">Notification2</a></td>
                 </tr>
                 <tr>
-                    <td>3.</td>
-                    <td>7</td>
-                    <td>15000</td>
-                    <td>14%</td>
-                    <td>10000</td>
-                    <td>3000</td>
-                    <td>ABC</td>
-                    <td>Personal</td>
-                    <td>Covenants</td>
-                    <td>Bad</td>
-                    <td><button class="btn-sm btn btn-default"><a href="fullyFund.html">Click</a></button></td>
-                    <td><button class="btn-sm btn btn-default"><a href="partialFund.html">Click</a> </button></td>
-                    <td>Good</td>
+                    <td>B23</td>
+                    <td>Notification3</td>
+                    <td>17/03/2017</td>
+                    <td><img src="#" alt="Notification3"></td>
                 </tr>
                 <tr>
-                    <td>4.</td>
-                    <td>10</td>
-                    <td>7000</td>
-                    <td>9%</td>
-                    <td>3000</td>
-                    <td>700</td>
-                    <td>ABC</td>
-                    <td>Car</td>
-                    <td>Personal Guarantee</td>
-                    <td>Good</td>
-                    <td><button class="btn-sm btn btn-default"><a href="fullyFund.html">Click</a></button></td>
-                    <td><button class="btn-sm btn btn-default"><a href="partialFund.html">Click</a> </button></td>
-                    <td>Good</td>
+                    <td>B23</td>
+                    <td>Notification4</td>
+                    <td>27/04/2017</td>
+                    <td><a href="#">Notification4</a></td>
                 </tr>
                 <tr>
-                    <td>5.</td>
-                    <td>5</td>
-                    <td>12000</td>
-                    <td>13%</td>
-                    <td>4000</td>
-                    <td>3000</td>
-                    <td>ABC</td>
-                    <td>Personal</td>
-                    <td>Covenants</td>
-                    <td>Good</td>
-                    <td><button class="btn-sm btn btn-default"><a href="fullyFund.html">Click</a></button></td>
-                    <td><button class="btn-sm btn btn-default"><a href="partialFund.html">Click</a> </button></td>
-                    <td>Bad</td>
+                    <td>B23</td>
+                    <td>Notification5</td>
+                    <td>08/05/2017</td>
+                    <td><a href="#">Notification5</a></td>
                 </tr>
             </table>
         </div>
@@ -217,17 +168,17 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/SmoothScroll.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.js"></script>
 
-<script src="js/owl.carousel.js"></script>
+<script src="../js/owl.carousel.js"></script>
 
 <!-- Javascripts
 ================================================== -->
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 
 

@@ -12,31 +12,37 @@
     <meta name="author" content="ThemeForces.com">
 
     <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+       ================================================== -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
 
     <!-- Slider
     ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.theme.css" rel="stylesheet" media="screen">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
+
+    <style>
+        .btnPadding{
+            padding: 22px;
+        }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,7 +64,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img class="navbar-brand" src="img/FP-Logo1.png" alt="...">
+            <img class="navbar-brand" src="../img/FP-Logo1.png" alt="...">
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,49 +84,26 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<!-- Borrow Form Section
-    ==========================================-->
 
-<div class="container" style="padding-top:5%">
+<div class="container" style="padding-top: 7%">
 
+    <div>
+        <h2 class="text-center">Lender</h2>
+        <br><br>
 
-    <!--<h3>Tabs</h3>-->
-    <ul class="nav nav-tabs nav-justified">
-        <li ><a href="individualSignUp.html">Sign Up</a></li>
-        <li class="active"><a href="individualSignIn.html">Sign In</a></li>
-    </ul>
+        <div class="col-xs-offset-5 col-md-offset-4">
 
-    <br>
+            <button class="btn btn-lg btn-primary btn-group btnPadding btnCenter" onclick="indiFunction()">Individual</button>
 
-    <div class="box box-default">
-        <div class="box-header with-border">
-            <h3 class="box-title text-center">For Individual (Lenders)</h3>
+            <button class="btn btn-lg btn-primary btn-group btnCenter" onclick="comFunction()">Entity, Company,<br>Government, Institution</button>
+
         </div>
 
-        <form action="" method="post">
-            <div class="box-body">
-                <div class="form-group col-sm-4 col-md-6 col-md-offset-3">
-                    <label for="username"><h4>Username:</h4></label>
-                    <input type="text"  class="form-control" id="username" placeholder="Enter Username" name="username" >
-                </div>
-                <div class="form-group col-sm-4 col-md-6 col-md-offset-3">
-                    <label for="passwd"><h4>Password:</h4></label>
-                    <input type="text" class="form-control" id="passwd" placeholder="Enter Password" name="passwd" >
-                </div>
-                <div class="form-group col-sm-4 col-md-6 col-md-offset-3">
-                    <button type="submit" class="btn btn-lg btn-primary btn-block">SignIn</button>
-                </div>
-                <div class="form-group col-sm-4 col-md-6 col-md-offset-3">
-                    <button type="submit" class="btn btn-sm btn-primary btn-block">Forgot password</button>
-                </div>
-                <div class="form-group col-sm-4 col-md-6 col-md-offset-3">
-                    <button type="submit" class="btn btn-md btn-primary btn-block">SignUp</button>
-                </div>
-            </div>
-        </form>
-
     </div>
+
 </div>
+
+
 
 
 <nav id="footer">
@@ -144,17 +127,25 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/SmoothScroll.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.js"></script>
 
-<script src="js/owl.carousel.js"></script>
+<script src="../js/owl.carousel.js"></script>
 
 <!-- Javascripts
 ================================================== -->
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script>
+    function indiFunction() {
+        window.location.replace("individualSignIn.html");
+    }
+    function comFunction() {
+        window.location.replace("companySignIn.html");
+    }
+</script>
 
 
 

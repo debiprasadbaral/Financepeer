@@ -12,30 +12,30 @@
     <meta name="author" content="ThemeForces.com">
 
     <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+       ================================================== -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
 
     <!-- Slider
     ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="../css/owl.theme.css" rel="stylesheet" media="screen">
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css"  href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +57,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img class="navbar-brand" src="img/FP-Logo1.png" alt="...">
+            <img class="navbar-brand" src="../img/FP-Logo1.png" alt="...">
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -82,16 +82,24 @@
 
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title text-center">Full Funding &nbsp;
+            <h3 class="box-title text-center">Partial Funding &nbsp;
             </h3>
 
         </div>
         <br>
         <!-- /.box-header -->
-        <div class="box-body no-padding">
+        <div class="box-body no-padding ">
 
             <form action="">
                 <div class="">
+                    <div class="form-group">
+                        <div class="col-md-4 col-md-offset-3 col-xs-10">
+                            <label for="amtfund"><h4>Amount to Fund:</h4></label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="amtfund" placeholder="Enter Amount to Fund" name="amtfund" >
+                        </div>
+                    </div>
                     <div class="form-group">
                         <div class="col-md-4 col-md-offset-3 col-xs-10">
                             <label for="monthlyInstallment"><h4>Monthly Installment:</h4></label>
@@ -100,7 +108,6 @@
                             <input type="text" class="form-control" id="monthlyInstallment" placeholder="Enter Monthly Installment" name="monthlyInstallment" >
                         </div>
                     </div>
-                    <br>
                     <div class="form-group">
                         <div class="col-md-4 col-md-offset-3 col-xs-10">
                             <label for="annualInstallment"><h4>Annual Installment:</h4></label>
@@ -119,7 +126,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-md-offset-4 col-xs-10">
-                        <h4>Confirm that below borrower is selected for full funding</h4>
+                        <h4>Confirm that below borrower is selected for Partial funding</h4>
                     </div>
 
                     <table id="fullyFundTable" class="table table-hover table-responsive">
@@ -137,14 +144,14 @@
                             <th>Lender Request Remarks</th>
                         </tr>
                         <tr>
-                            <td>1.</td>
-                            <td>9</td>
-                            <td>12000</td>
-                            <td>12%</td>
-                            <td>25000</td>
-                            <td>5000</td>
+                            <td>4.</td>
+                            <td>10</td>
+                            <td>7000</td>
+                            <td>9%</td>
+                            <td>3000</td>
+                            <td>700</td>
                             <td>ABC</td>
-                            <td>Personal</td>
+                            <td>Car</td>
                             <td>Personal Guarantee</td>
                             <td>Good</td>
                             <td>Good</td>
@@ -154,6 +161,8 @@
                     <div class="form-group col-md-8 col-md-offset-5 col-xs-10 col-xs-offset-4">
                         <button type="submit" class="btn btn-lg btn-primary">Confirm</button>
                     </div>
+
+
                 </div>
             </form>
         </div>
@@ -189,17 +198,17 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/SmoothScroll.js"></script>
+<script type="text/javascript" src="../js/jquery.isotope.js"></script>
 
-<script src="js/owl.carousel.js"></script>
+<script src="../js/owl.carousel.js"></script>
 
 <!-- Javascripts
 ================================================== -->
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 
 
