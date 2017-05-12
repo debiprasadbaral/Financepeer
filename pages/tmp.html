@@ -12,7 +12,7 @@
     <meta name="author" content="ThemeForces.com">
 
     <!-- Favicons
-    ================================================== -->
+     ================================================== -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
@@ -29,6 +29,26 @@
 
     <!-- Stylesheet
     ================================================== -->
+
+    <style>
+        body {
+            color: #404040;
+            padding: 50px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+
+        output {
+            display: block;
+        }
+
+    </style>
+
     <link rel="stylesheet" type="text/css"  href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
@@ -80,140 +100,77 @@
 
 <div class="container" style="padding-top: 5%">
 
-    <!--<h3>Tabs</h3>-->
-    <ul class="nav nav-tabs nav-justified">
-        <li class="active"><a href="borrowDashboard.html">Transactions</a></li>
-        <li><a href="payments.html">Make Payments</a></li>
-        <li><a href="notifications.html">Notifications</a></li>
-        <li><a href="accountDetails.html">Account Details</a></li>
-    </ul>
-
-    <br>
-
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Borrower Dashboard &nbsp;
-                <a href="#">
-                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
-                </a>&nbsp;&nbsp;
-                <button class="btn btn-md btn-primary" onclick="requestForLoan()">Request for Loan</button>
+            <h3 class="box-title ">Borrower &nbsp;
             </h3>
 
         </div>
-        <br>
         <!-- /.box-header -->
-        <div class="box-body no-padding table-responsive">
-            <table class="table table-hover">
-                <tr>
-                    <th><input type="checkbox" name="all" />&nbsp;</th>
-                    <th>Borrower Listing Status</th>
-                    <th>Borrower ID</th>
-                    <th>Requested Amount</th>
-                    <th>Borrower Ratings</th>
-                    <th>Annual Intrest Rate</th>
-                    <th>Tenure</th>
-                    <th>Loan Type</th>
-                    <th>Date of Request</th>
-                    <th>Bank Acc. to receive</th>
-                    <th>Bank Acc. to pay</th>
-                    <th>Auto Payment</th>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="1" />&nbsp;</td>
-                    <td>1.</td>
-                    <td>AB14</td>
-                    <td>25000</td>
-                    <td>9</td>
-                    <td>12%</td>
-                    <td>ABC</td>
-                    <td>Personal</td>
-                    <td>12/11/2016</td>
-                    <td>453789754543</td>
-                    <td>132366460909</td>
-                    <td>YES</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="2" />&nbsp;</td>
-                    <td>2.</td>
-                    <td>BL54</td>
-                    <td>10000</td>
-                    <td>7</td>
-                    <td>10%</td>
-                    <td>ABC</td>
-                    <td>Education</td>
-                    <td>03/05/2015</td>
-                    <td>56546773564</td>
-                    <td>66775783939</td>
-                    <td>YES</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="3" />&nbsp;</td>
-                    <td>3.</td>
-                    <td>FV72</td>
-                    <td>5000</td>
-                    <td>5</td>
-                    <td>11%</td>
-                    <td>ABC</td>
-                    <td>Personal</td>
-                    <td>17/04/2016</td>
-                    <td>239757403759</td>
-                    <td>454839373948</td>
-                    <td>NO</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="4" />&nbsp;</td>
-                    <td>4.</td>
-                    <td>HDK75</td>
-                    <td>30000</td>
-                    <td>8</td>
-                    <td>10%</td>
-                    <td>ABC</td>
-                    <td>Home</td>
-                    <td>08/09/2014</td>
-                    <td>23495432255</td>
-                    <td>87545252542</td>
-                    <td>YES</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="5" />&nbsp;</td>
-                    <td>5.</td>
-                    <td>DP73</td>
-                    <td>25000</td>
-                    <td>9</td>
-                    <td>12%</td>
-                    <td>ABC</td>
-                    <td>Personal</td>
-                    <td>12/11/2016</td>
-                    <td>453789754543</td>
-                    <td>132366460909</td>
-                    <td>NO</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="6" />&nbsp;</td>
-                    <td>6.</td>
-                    <td>BL54</td>
-                    <td>16000</td>
-                    <td>7</td>
-                    <td>14%</td>
-                    <td>ABC</td>
-                    <td>Education</td>
-                    <td>03/05/2015</td>
-                    <td>56546773564</td>
-                    <td>66775783939</td>
-                    <td>NO</td>
-                </tr>
+        <div class="box-body no-padding">
+            <div class="form-group">
+                <div class="col-md-10">
+                    <div class="col-md-4 col-md-offset-2 col-xs-10">
+                        <label for="range1"><h4>Loan Amount :</h4></label>
+                    </div>
+                    <div class="col-md-4">
+                        <form name="myform" oninput="range1value.value = range1.valueAsNumber">
+                            <input name="range1" type="range" step="1" min="1" max="40" value="1">
+                            <output name="range1value" for="range1" >1</output>
+                        </form>
+                    </div>
+                </div>
 
-            </table>
+                <input type="range" value="1" step="1" min="1" max="40">
+                <br>
+                <output>1</output>
+
+
+
+                <div class="col-md-10">
+                    <div class="col-md-4 col-md-offset-2 col-xs-10">
+                        <label for="amtfund"><h4>Tenure :</h4></label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="amtfund" placeholder="Enter Tenure" name="amtfund" >
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="col-md-4 col-md-offset-2">
+                        <label for="reason"><h4>Reason of Loan :</h4></label>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" style="width: 100%" id="reason">
+                            <option selected disabled hidden>Select Option</option>
+                            <option value="edu">Education</option>
+                            <option value=home>Home</option>
+                            <option value="car">Car</option>
+                            <option value="marriage">Marriage</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form-group col-md-8 col-md-offset-4 col-xs-10 col-xs-offset-3">
+                    <button type="submit" class="btn btn-lg btn-primary" onclick="requestLoan()">Request for Loan</button>
+                </div>
+                <div class="form-group col-md-8">
+                    <span class="col-md-4 col-md-offset-6">
+                        <button id="ratingBtn" type="submit" class="btn btn-lg btn-primary" onclick="loadPage()">Credit Rating</button>
+                    </span>
+                    <div id="gif" class=" col-md-1 "></div>
+                </div>
+
+
+            </div>
         </div>
         <!-- /.box-body -->
     </div>
     <!-- /.box -->
 
 </div>
-
-
-
-
 
 
 <nav id="footer">
@@ -248,13 +205,21 @@
 <!-- Javascripts
 ================================================== -->
 <script type="text/javascript" src="../js/main.js"></script>
-
+<script type="text/javascript" src="../js/borrowLoan.js"></script>
 <script>
-    function requestForLoan() {
-        window.location.replace("borrowLoan.html");
-    }
-</script>
+    $(function() {
+        var output = document.querySelectorAll('output')[0];
 
+        $(document).on('input', 'input[type="range"]', function(e) {
+            output.innerHTML = e.currentTarget.value;
+        });
+
+        $('input[type=range]').rangeslider({
+            polyfill: false
+        });
+    });
+
+</script>
 
 
 </body>

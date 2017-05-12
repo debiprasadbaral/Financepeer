@@ -7,18 +7,28 @@ function requestLoan() {
 }
 
 $(document).ready(function(){
-    $("Button").click(function(){
-        $("span").fadeOut(4000);
-        $("span").hide(4000);
+    var  myButton= document.getElementById('hideBtn');
+    $("myButton").click(function(){
+        $("myButton").fadeOut(3000);
+        $("myButton").hide(3000);
     });
 });
 
 function loadPage(){
     $('#gif').html('<img src="../img/default.gif" />');
     window.setTimeout(function(){
-
-        // Move to a new location or you can do something else
         window.location.href = "borrowDashboard.html";
-
     }, 3000);
 }
+
+$(function() {
+    var output = document.querySelectorAll('output')[0];
+
+    $(document).on('input', 'input[type="range"]', function(e) {
+        output.innerHTML = e.currentTarget.value;
+    });
+
+    $('input[type=range]').rangeslider({
+        polyfill: false
+    });
+});

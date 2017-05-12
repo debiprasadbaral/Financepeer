@@ -22,6 +22,9 @@
     <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
 
+    <!-- Wizard -->
+    <link rel="stylesheet" type="text/css"  href="../css/wizard.css">
+
     <!-- Slider
     ================================================== -->
     <link href="../css/owl.carousel.css" rel="stylesheet" media="screen">
@@ -29,6 +32,8 @@
 
     <!-- Stylesheet
     ================================================== -->
+
+
     <link rel="stylesheet" type="text/css"  href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
@@ -77,73 +82,146 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-
 <div class="container" style="padding-top: 5%">
+    <div class="row">
+        <section>
+            <div class="wizard">
+                <div class="wizard-inner">
+                    <div class="connecting-line"></div>
+                    <ul class="nav nav-tabs" role="tablist">
 
-    <div class="box">
-        <div class="box-header with-border">
-            <h3 class="box-title ">Borrower &nbsp;
-            </h3>
+                        <li role="presentation" class="active">
+                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-folder-open"></i>
+                            </span>
+                            </a>
+                        </li>
 
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body no-padding">
-            <div class="form-group">
-                <div class="col-md-10">
-                    <div class="col-md-4 col-md-offset-2 col-xs-10">
-                        <label for="range1"><h4>Loan Amount :</h4></label>
-                    </div>
-                    <div class="col-md-4">
-                        <form name="myform" oninput="range1value.value = range1.valueAsNumber">
-                            <input name="range1" type="range" step="1" min="1" max="40" value="1">
-                            <output name="range1value" for="range1" >1</output>
-                        </form>
-                    </div>
+                        <li role="presentation" class="disabled">
+                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-picture"></i>
+                            </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="col-md-10">
-                    <div class="col-md-4 col-md-offset-2 col-xs-10">
-                        <label for="amtfund"><h4>Tenure :</h4></label>
-                    </div>
-                    <div class="col-md-4">
-                        <input type="text" class="form-control" id="amtfund" placeholder="Enter Tenure" name="amtfund" >
-                    </div>
-                </div>
+                <form role="form">
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="step1">
+                            <h3>Step 1</h3>
+                            <div class="box">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title text-center">Enter details : &nbsp;
+                                    </h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body no-padding">
+                                    <div class="form-group">
+                                        <div class="col-md-10">
+                                            <div class="col-md-4 col-md-offset-2 col-xs-10">
+                                                <label for="range1"><h4>Loan Amount :</h4></label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <form name="myform" oninput="range1value.value = range1.valueAsNumber">
+                                                    <input id="range1" name="range1" type="range" step="1" min="1" max="40" value="1">
+                                                    <output name="range1value" for="range1" >1</output>
+                                                </form>
+                                            </div>
+                                        </div>
 
-                <div class="col-md-10">
-                    <div class="col-md-4 col-md-offset-2">
-                        <label for="reason"><h4>Reason of Loan :</h4></label>
+                                        <div class="col-md-10">
+                                            <div class="col-md-4 col-md-offset-2 col-xs-10">
+                                                <label for="amtfund"><h4>Tenure :</h4></label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control" id="amtfund" placeholder="Enter Tenure" name="amtfund" >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10">
+                                            <div class="col-md-4 col-md-offset-2">
+                                                <label for="reason"><h4>Reason of Loan :</h4></label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control" style="width: 100%" id="reason">
+                                                    <option selected disabled hidden>Select Option</option>
+                                                    <option value="edu">Education</option>
+                                                    <option value=home>Home</option>
+                                                    <option value="car">Car</option>
+                                                    <option value="marriage">Marriage</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <!--
+                                        <div class="form-group col-md-8 col-md-offset-4 col-xs-10 col-xs-offset-3">
+                                            <button type="submit" class="btn btn-lg btn-primary" onclick="requestLoan()">Request for Loan</button>
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                            <!-- End of step 1 -->
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane" role="tabpanel" id="step2">
+                            <h3>Step 2</h3>
+                            <p>This is step 2</p>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane" role="tabpanel" id="step3">
+                            <h3>Step 3</h3>
+                            <div class="form-group col-md-8">
+                                <span class="col-md-4 col-md-offset-6">
+                                    <button id="hideBtn" type="button" class="btn btn-lg btn-primary" onclick="loadPage()">Credit Rating</button>
+                                </span>
+                                <div id="gif" class=" col-md-2 "></div>
+                            </div>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane" role="tabpanel" id="complete">
+                            <h3>Complete</h3>
+                            <p id="loanStatus">Loan Approved</p>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="col-md-4">
-                        <select class="form-control" style="width: 100%" id="reason">
-                            <option selected disabled hidden>Select Option</option>
-                            <option value="edu">Education</option>
-                            <option value=home>Home</option>
-                            <option value="car">Car</option>
-                            <option value="marriage">Marriage</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <br>
-
-                <div class="form-group col-md-8 col-md-offset-4 col-xs-10 col-xs-offset-3">
-                    <button type="submit" class="btn btn-lg btn-primary" onclick="requestLoan()">Request for Loan</button>
-                </div>
-                <div class="form-group col-md-8">
-                    <span class="col-md-4 col-md-offset-6">
-                        <button id="ratingBtn" type="submit" class="btn btn-lg btn-primary" onclick="loadPage()">Credit Rating</button>
-                    </span>
-                    <div id="gif" class=" col-md-1 "></div>
-                </div>
-
-
+                </form>
             </div>
-        </div>
-        <!-- /.box-body -->
+        </section>
     </div>
-    <!-- /.box -->
-
 </div>
 
 
@@ -179,7 +257,9 @@
 <!-- Javascripts
 ================================================== -->
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/wizard.js"></script>
 <script type="text/javascript" src="../js/borrowLoan.js"></script>
+
 
 
 </body>
