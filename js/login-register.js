@@ -75,3 +75,7 @@ function shakeModal(){
     }, 1000 ); 
 }
 
+
+
+function Contactform()
+{ location.href = 'contact_form/contact_process.php'; }
