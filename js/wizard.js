@@ -23,6 +23,17 @@ $(document).ready(function () {
         nextTab($active);
 
     });
+
+    $(".third-step").click(function (e) {
+
+        window.setTimeout(function(){
+            var $active = $('.wizard .nav-tabs li.active');
+            $active.next().removeClass('disabled');
+            nextTab($active);
+        }, 3000);
+
+    });
+
     $(".prev-step").click(function (e) {
 
         var $active = $('.wizard .nav-tabs li.active');

@@ -2,6 +2,7 @@
 
 include dirname(dirname(__FILE__)).'/mail.php';
 
+
 error_reporting (E_ALL ^ E_NOTICE);
 
 $post = (!empty($_POST)) ? true : false;
@@ -14,7 +15,6 @@ $name = stripslashes($_POST['name']);
 $email = trim($_POST['email']);
 $subject = stripslashes($_POST['subject']);
 $message = stripslashes($_POST['message']);
-
 
 $error = '';
 
@@ -44,10 +44,10 @@ if(!$message || strlen($message) < 10)
 $error .= "Please enter your message. It should have at least 10 characters.<br />";
 }
 
-
+//$mail = mail("debiprasad.baral@gmail.com", $subject, $message,
 if(!$error)
 {
-$mail = mail("debiprasad.baral@gmail.com", $subject, $message,
+$mail =mail("narkhede.aks@gmail.com", $subject, $message,
      "From: ".$name." <".$email.">\r\n"
     ."Reply-To: ".$email."\r\n"
     ."X-Mailer: PHP/" . phpversion());

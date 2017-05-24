@@ -2,23 +2,34 @@
  * Created by Akshay on 10-May-17.
  */
 
-function requestLoan() {
-    window.location.replace("https://developer.yodlee.com/Account_Verification/FastLink_Integration_Guide_For_IAV");
+function finished() {
+    window.location.replace("borrowDashboard.html");
 }
-
+/*
 $(document).ready(function(){
-    var  myButton= document.getElementById('hideBtn');
+    var  myButton= document.getElementById('hide');
     $("myButton").click(function(){
-        $("myButton").fadeOut(3000);
-        $("myButton").hide(3000);
+        $("hideThis").fadeOut(3000);
+        $("hideThis").hide(3000);
     });
 });
+*/
+
 
 function loadPage(){
+
     $('#gif').html('<img src="../img/default.gif" />');
+
+    var hidden = false;
+    setTimeout(function(){
+        document.getElementById("gif").style.visibility= hidden ? "visible" : "hidden";
+        hidden = !hidden;
+    },3000);
+/*
     window.setTimeout(function(){
         window.location.href = "borrowDashboard.html";
     }, 3000);
+    */
 }
 
 $(function() {

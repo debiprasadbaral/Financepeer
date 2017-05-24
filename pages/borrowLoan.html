@@ -20,6 +20,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"  href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.css">
 
     <!-- Wizard -->
@@ -93,7 +94,7 @@
                         <li role="presentation" class="active">
                             <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
                             <span class="round-tab">
-                                <i class="glyphicon glyphicon-folder-open"></i>
+                                <i class="fa fa-pencil-square-o"></i>
                             </span>
                             </a>
                         </li>
@@ -101,14 +102,14 @@
                         <li role="presentation" class="disabled">
                             <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
                             <span class="round-tab">
-                                <i class="glyphicon glyphicon-pencil"></i>
+                                <i class="fa fa-bookmark"></i>
                             </span>
                             </a>
                         </li>
                         <li role="presentation" class="disabled">
                             <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
                             <span class="round-tab">
-                                <i class="glyphicon glyphicon-picture"></i>
+                                <i class="fa fa-circle-o-notch"></i>
                             </span>
                             </a>
                         </li>
@@ -116,7 +117,7 @@
                         <li role="presentation" class="disabled">
                             <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
                             <span class="round-tab">
-                                <i class="glyphicon glyphicon-ok"></i>
+                                <i class="fa fa-check-circle"></i>
                             </span>
                             </a>
                         </li>
@@ -200,21 +201,18 @@
                         <div class="tab-pane" role="tabpanel" id="step3">
                             <h3>Step 3</h3>
                             <div class="form-group col-md-8">
-                                <span class="col-md-4 col-md-offset-6">
-                                    <button id="hideBtn" type="button" class="btn btn-lg btn-primary" onclick="loadPage()">Credit Rating</button>
-                                </span>
-                                <div id="gif" class=" col-md-2 "></div>
+                                <div id="gif" class="col-md-offset-6 col-md-1"><h5>Loading...</h5></div>
                             </div>
                             <ul class="list-inline pull-right">
                                 <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
                                 <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                                <li><button id="hideText" type="button" class="btn btn-primary btn-info-full third-step" onclick="loadPage()">Save and continue</button></li>
                             </ul>
                         </div>
 
-                        <div class="tab-pane" role="tabpanel" id="complete">
+                        <div class="tab-pane" style="text-align:center;" role="tabpanel" id="complete">
                             <h3>Complete</h3>
-                            <p id="loanStatus">Loan Approved</p>
+                            <button type="button" class="btn btn-lg btn-primary" onclick="finished()">Finished</button>
                         </div>
                         <div class="clearfix"></div>
                     </div>
