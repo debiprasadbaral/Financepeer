@@ -37,10 +37,20 @@ function openLoginModal(){
     
 }
 function openRegisterModal(){
-    showRegisterForm();
+    window.location.href ='https://forms.zohopublic.com/rohitgajbhiye/form/FinancePeerCustomerRegistration/formperma/4f4baem1g2f7C64C3j6F7F6d0';
+    /*showRegisterForm();
     setTimeout(function(){
         $('#loginModal').modal('show');    
-    }, 230);
+    }, 230);*/
+    
+}
+
+function redirecttoZoho(){
+    window.location.href ='https://forms.zohopublic.com/rohitgajbhiye/form/FinancePeerCustomerRegistration/formperma/4f4baem1g2f7C64C3j6F7F6d0';
+    /*showRegisterForm();
+    setTimeout(function(){
+        $('#loginModal').modal('show');    
+    }, 230);*/
     
 }
 

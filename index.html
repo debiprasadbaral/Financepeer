@@ -10,7 +10,7 @@
     <meta name="description" content="This is an one page template built based on bootstrap framework. It is simple, mobile responsive">
     <meta name="keywords" content="bootstrap theme, portfolio template, digital agency, onepage, mobile responsive, bootstrap theme">
     <meta name="author" content="Financepeer.com">
-    
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -38,6 +38,7 @@
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/login-register.js" ></script>
+    <script type="text/javascript" src="js/fblogin.js" ></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,9 +47,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-        $(document).ready(function(){   
+        $(document).ready(function(){
             $("#ajax-contact-form").submit(function() {
-                var str = $(this).serialize();      
+                var str = $(this).serialize();
                 $.ajax({
                     type: "POST",
                     url: "contact_form/contact_process.php",
@@ -67,7 +68,7 @@
                 return false;
             });
 
-        });     
+        });
     </script>
   </head>
   <body>
@@ -110,12 +111,12 @@
             <div class="content">
                 <!--<h1>Welcome to <strong><span class="color">FINANCEPEER</span></strong></h1>
                 <p class="lead">We are an AI based peer to peer lending company with <strong>extraordinary people</strong> make getting <strong>personal loans simple</strong></p>-->
-                
-                <a href="#tf-borrow-services" class="fa fa-angle-down page-scroll"></a>
-                <div class="space"></div>
-                <div class="lead center">
-                    <button class="btn btn-default" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log In</button>
-                    <button class="btn btn-default" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Register</button>
+
+                <a href="#tf-borrow-services" style="margin-right:30px;" class="fa fa-angle-down page-scroll"></a>
+
+                <div class="lead center" style="margin-right:18px;margin-top:20px; ">
+                    <button class="btn btn-default" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();" >Log In</button>
+                    <button class="btn btn-default" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();" >Register</button>
                 </div>
             </div>
         </div>
@@ -127,7 +128,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title">Login with</h4>
                     </div>
-                    <div class="modal-body">  
+                    <div class="modal-body">
                         <div class="box">
                              <div class="content">
                                 <div class="social">
@@ -137,7 +138,7 @@
                                     <a id="google_login" class="circle google" href="/auth/google_oauth2">
                                         <i class="fa fa-google-plus fa-fw"></i>
                                     </a>
-                                    <a id="facebook_login" class="circle facebook" href="/auth/facebook">
+                                    <a id="facebook_login" class="circle facebook" onclick="fbLogin()" href="javascript:void(0);">
                                         <i class="fa fa-facebook fa-fw"></i>
                                     </a>
                                 </div>
@@ -171,7 +172,7 @@
                     </div>
                     <div class="modal-footer">
                         <div class="forgot login-footer">
-                            <span>Looking to 
+                            <span>Looking to
                                  <a href="javascript: showRegisterForm();">create an account</a>
                             ?</span>
                         </div>
@@ -179,7 +180,7 @@
                              <span>Already have an account?</span>
                              <a href="javascript: showLoginForm();">Login</a>
                         </div>
-                    </div>        
+                    </div>
                   </div>
               </div>
           </div>
@@ -232,12 +233,12 @@
                 <div class="col-md-4 col-sm-6 service">
                     <i class="fa fa-hourglass-3"></i>
                     <h4><strong>     No penalty for pre-payment     </strong></h4>
-                    
+
                 </div>
                 <div class="clearfix"></div>
                 <div class="space"></div>
                 <div class="section-title center">
-                    <button type="submit" class="btn tf-btn btn-default">Get me money</button>
+                    <button type="submit" class="btn tf-btn btn-default" onclick="redirecttoZoho();">Get me money</button>
                 </div>
             </div>
         </div>
@@ -336,7 +337,7 @@
             </div>
             <div class="clearfix"></div>
             <div class="section-title center">
-                <button type="submit" class="btn tf-btn btn-default">Start investing</button>
+                <button type="submit" class="btn tf-btn btn-default" onclick="redirecttoZoho();">Start investing</button>
             </div>
         </div>
     </div>
@@ -376,7 +377,7 @@
         </div>
     </div>
 
-    
+
 
     <!-- Portfolio Section
     ==========================================-->
@@ -469,36 +470,22 @@
                         <hr>
                     </div>
                 </div>
-                <div id="clients" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="img/client/FICO.png" alt="FICO">
+
+                  <div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12"><img src="img/client/FICO.png" alt="FICO"></div>
+                        <div class="col-sm-4 col-xs-12"><img src="img/client/ICICI.png" alt="ICICI"></div>
+                        <div class="col-sm-4 col-xs-12"><img src="img/client/CIBIL.png" alt="CIBIL"></div>
                     </div>
-                    <div class="item">
-                        <img src="img/client/ICICI.png" alt="ICICI">
+                    <div class="row">
+                        <div class="col-sm-12 "></div>
+                        <div class="col-sm-12 "></div>
+                        <div class="col-sm-12 "></div>
                     </div>
-                    <div class="item">
-                        <img src="img/client/CIBIL.jpg" alt="CIBIL">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/DBS.png" alt="SBI">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/YESBANK.png" alt="YESBANK">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/FICO.png" alt="FICO">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/ICICI.png" alt="ICICI">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/CIBIL.jpg" alt="CIBIL">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/SBI.png" alt="SBI">
-                    </div>
-                    <div class="item">
-                        <img src="img/client/YESBANK.png" alt="YESBANK">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12"><img src="img/client/DBS.png" alt="SBI"></div>
+                        <div class="col-sm-4 col-xs-12"><img src="img/client/YESBANK.png" alt="YESBANK"></div>
+                        <div class="col-sm-4 col-xs-12"><img src="img/client/SBI.png" alt="SBI"></div>
                     </div>
                 </div>
 
@@ -525,7 +512,7 @@
                         </div>
                         <p class="intro">Our economy will grow by leaps and bounds once we start helping each other have access to funds. We at FinancePeer strive for the same to establish trust between people using our technology.</p>
                         <p class="intro">Our AI based technology combines the CIBIL score for each borrower along with our patent pending credit rating model to accurately convey borrower capability to the lenders. </p>
-                        
+
                         <!--<ul class="about-list">
                             <li>
                                 <span class="fa fa-dot-circle-o"></span>
@@ -564,7 +551,7 @@
                         <div class="thumbnail">
                             <img src="img/team/Rohit.png" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Rohit Gajbhiye</h3>
+                                <h3>Rohit</h3>
                                 <p>CEO / Founder</p>
                                 <p>Rohit is a Stanford Ignite and IITB alumnus with a demonstrated history of working in the banking industry through DBS, Singapore. He is skilled in Liquidity Risk, Commercial Banking & Credit Risk Management. Rohit is a highly passionate professional who envisions peer to peer digital lending to be the frontier of the Economic growth </p>
                             </div>
@@ -575,9 +562,9 @@
                         <div class="thumbnail">
                             <img src="img/team/debi.png" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>DebiPrasad Baral</h3>
+                                <h3>Prasad</h3>
                                 <p>Head-Technology</p>
-                                <p>Debi is a BIT and Stanford Ignite alumnus who has lead innovation in IT with 13+ years of experience in enterprise software Product Development & Consulting. His expertise includes Enterprise Architecture, IT Strategy, Virtualization & Cloud management, CRM & Sales platforms, Mobile and Innovation programs development. Debi lives and breathes technology </p>
+                                <p>Kunal is a BIT and Stanford Ignite alumnus who has lead innovation in IT with 13+ years of experience in enterprise software Product Development & Consulting. His expertise includes Enterprise Architecture, IT Strategy, Virtualization & Cloud management, CRM & Sales platforms, Mobile and Innovation programs development. Kunal lives and breathes technology </p>
                             </div>
                         </div>
                     </div>
@@ -586,7 +573,7 @@
                         <div class="thumbnail">
                             <img src="img/team/Sunit.png" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Sunit Gajbhiye</h3>
+                                <h3>Sunit</h3>
                                 <p>Head-Business</p>
                                 <p>Sunit is an IIM and VJTI alumnus with 6+ years of experience in Business Operations and Product Management. His experience includes Smartphone software products and Partnerships, AI based process automations and Mobile business solutions. He has a patent in the smartphone domain for Mobile Ads. Sunit is a fun loving person with a 'bring it on attitude' who is always in for any game</p>
                             </div>
@@ -597,7 +584,7 @@
                         <div class="thumbnail">
                             <img src="img/team/Aman.png" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Aman Gupta</h3>
+                                <h3>Aman</h3>
                                 <p>Head-Finance</p>
                                 <p>Aman is an IIM alumnus and a CFA Level 3 certified professional with 6+ years of experience in the Finance industry. His expertise lies in Financial Markets, Banking and Residential Mortgage. As part of a large US mortgage servicer, he provided tremendous value by creating and leading acquisition solutions of large mortgage servicing divisions and residential mortgage portfolios from big multinational banks  </p>
                             </div>
@@ -606,20 +593,9 @@
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="img/team/Nitesh.png" alt="..." class="img-circle team-img">
-                            <div class="caption">
-                                <h3>Nitesh Yadav</h3>
-                                <p>Head-Engineering</p>
-                                <p>Nitesh is an IITR alumnus with 6+ years of experience in Product Development, Product Enhancement, Application Integration and optimizations. He is a technology savvy professional whose expertise lies in design and development of backend services, API's, Web applications and Mobile Applications </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
                             <img src="img/team/Naveesh.png" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Naveesh Reddy</h3>
+                                <h3>Naveesh</h3>
                                 <p>Head-Data Science</p>
                                 <p>Naveesh is an IITB alumnus with 3+ years of experience in developing machine learning algorithms for Fraud detection, Cross-sell, Up-sell, Attrition predictions and Sentiment Analysis. His expertise lies in building Clustering & Regression models, NLP, Time Series Analysis etc. He has delivered end to end analytics solutions generating multimillion dollar revenues for client based out of Japan, India and Malaysia </p>
                             </div>
@@ -630,7 +606,7 @@
         </div>
     </div>
 
-    
+
     <!-- Contact Section
     ==========================================-->
     <div id="tf-contact" class="text-center">
@@ -644,7 +620,7 @@
                             <hr>
                         </div>
                         <div class="clearfix"></div>
-                        <small><em>No question is a silly question. Our services team would be happy to provide you more information for all your queries sent to us with below details</em></small>            
+                        <small><em>No question is a silly question. Our services team would be happy to provide you more information for all your queries sent to us with below details</em></small>
                     </div>
                     <div id="note"></div>
                     <div id="fields">
@@ -678,17 +654,19 @@
                                 <label for="message">Message</label>
                                 <textarea class="form-control" id="message" rows="3" placeholder="What can we help you with"></textarea>
                             </div>
-                            
+
                             <button type="submit" class="btn tf-btn btn-default">Submit</button>
                         </form>
                     </div>
                     <div class="section-title center">
-                        <h2><strong>call us</strong></h2>
+                        <h2><strong>Reach us</strong></h2>
                         <div class="line">
                             <hr>
                         </div>
                         <div class="clearfix"></div>
-                        <em>@ +917406795633</em>         
+                        <em>@ +917406795633</em>
+                        </br>
+                        <em>support@financepeer.com</em>
                     </div>
                 </div>
             </div>
@@ -735,6 +713,7 @@
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/login-register.js"></script>
+    <script type="text/javascript" src="js/fblogin.js" ></script>
 
   </body>
 </html>
